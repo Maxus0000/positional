@@ -7,18 +7,38 @@
 .nav-list{
   font-size: 0;
 }
-.nav-lisr-item{
+.nav-list-item{
 display: inline-block;
+position: relative;
 background-color: var(--main-color);
 color: var(--text-color);
-font-style:initial;
+font-size:initial;
 }
-.nav-lisr-item:hover{
+.nav-list-item:hover{
   background-color:var(--hover-color)
 
+}
+.nav-list-item + .nav-list-item{
+  border-left: 1px solid var(--hover-color);
 }
 
 .nav-list-link{
   display: inline-block;
   padding: 1em;
+}
+
+.nav-list-item:hover .sub-nav-list{
+  display: block;
+}
+.sub-nav-list{
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.sub-nav-list-item{
+  display: block;
+}
+section{
+  margin-top: 20px;
 }
