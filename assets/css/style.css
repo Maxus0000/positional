@@ -13,6 +13,10 @@ background-color: var(--main-color);
 color: var(--text-color);
 font-style:initial;
 }
+.nav-lisr-item:hover{
+  background-color:var(--hover-color)
+
+}
 
 .nav-list-link{
   display: inline-block;
